@@ -2,10 +2,43 @@
 .header {
   border: 1px dotted blue;
 }
+
 .container {
   border: 1px dotted red;
-  display: flex;
-  justify-content: space-between;
+  max-width: 96vw;
+  margin: 0 auto;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
 }
 /* Main */
 /* Footer */
+
+@media (min-width: 568px) {
+  /* Header */
+  .container {
+    max-width: 540px;
+  }
+  /* Main */
+  /* Footer */
+}
+
+@media (min-width: 768px) {
+  /* Header */
+  .container {
+    max-width: 720px;
+  }
+  /* Main */
+  /* Footer */
+}
+
+@media (min-width: 1024px) {
+  /* Header */
+  .container {
+    max-width: 992px;
+  }
+  /* Main */
+  /* Footer */
+}
