@@ -1,12 +1,24 @@
+/**/
+
 /* Header */
 .header {
-  border: 1px dotted blue;
+  border: 1px dotted red;
 }
 
 .container {
-  border: 1px dotted red;
-  max-width: 96vw;
+  border: 1px dotted blue;
+  max-width: 96vw;        /*Ancho maximo*/
+  margin: 0 auto;         /*Centrado del contenedor*/
+  padding: 0 8px;         /*El padding no aumenta el tamaño del contenedor*/
+  box-sizing: border-box; /*Hace que los padding no aumenten el tamaño del contenedor*/
+}
+
+.container_fluid {
+  border: 1px solid orangered;
   margin: 0 auto;
+  max-width: 100vw;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header_container{
@@ -16,10 +28,13 @@
 /* Main */
 /* Footer */
 
+/* MEDIA QUERIES */
+
 @media (min-width: 568px) {
   /* Header */
   .container {
     max-width: 540px;
+    padding: 0 16px; /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa su tamaño en 8px en cada media query*/
   }
   /* Main */
   /* Footer */
@@ -29,6 +44,7 @@
   /* Header */
   .container {
     max-width: 720px;
+    padding: 0 24px;
   }
   /* Main */
   /* Footer */
@@ -38,6 +54,47 @@
   /* Header */
   .container {
     max-width: 992px;
+    padding: 0 32px;
+  }
+  /* Main */
+  /* Footer */
+}
+
+@media (min-width: 1200px) {
+  /* Header */
+  .container {
+    max-width: 1140px;
+    padding: 0 40px;
+  }
+  /* Main */
+  /* Footer */
+}
+
+@media (min-width: 1400px) {
+  /* Header */
+  .container {
+    max-width: 1320px;
+    padding: 0 48px;
+  }
+  /* Main */
+  /* Footer */
+}
+
+@media (min-width: 1600px) {
+  /* Header */
+  .container {
+    max-width: 1440px;
+    padding: 0 56px;
+  }
+  /* Main */
+  /* Footer */
+}
+
+@media (min-width: 1920px) {
+  /* Header */
+  .container {
+    max-width: 1600px;
+    padding: 0 64px;
   }
   /* Main */
   /* Footer */
