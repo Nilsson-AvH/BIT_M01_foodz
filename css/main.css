@@ -1,4 +1,14 @@
 /* Mobile First*/
+html, 
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Header */
 .header {
@@ -26,6 +36,9 @@
     justify-content: space-between;
 }
 /* Main */
+main {
+  flex-grow: 1;
+}
 /* Footer */
 
 /* MEDIA QUERIES */
