@@ -1,3 +1,17 @@
+/* Global variables */
+:root{
+  /*Font size*/
+  --over-font-size: 62.5%; /*Convierte 10px en 1rem o sea rem en base 10 y ya no en base 16*/
+  /*Base colors*/
+  --Islamic-Green: #04B90B;
+  --Slate-Gray: #777E90;
+  --Charleston-Green: #23262F; 
+}
+
+html {
+  font-size: var(--over-font-size)
+}
+
 /* Mobile First*/
 html, 
 body {
@@ -11,7 +25,7 @@ body {
 }
 
 h1 span {
-  color: #04B90B;
+  color: var(--Islamic-Green);
 }
 
 /* Header */
@@ -47,7 +61,7 @@ h1 span {
 }
 
 .menu__link {
-  color: #777E90;
+  color: var(--Slate-Gray);
   text-decoration: none;
 }
 
@@ -57,7 +71,7 @@ h1 span {
 }
 
 .btn--light-green {
-  background-color: #04B90B;
+  background-color: var(--Islamic-Green);
   color: #FFF;
   text-transform: uppercase;
 }
