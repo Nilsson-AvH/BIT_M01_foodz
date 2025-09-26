@@ -1,3 +1,7 @@
+*{
+  border: 1px dotted blue;
+}
+
 /* Mobile First*/
 html, 
 body {
@@ -31,11 +35,18 @@ body {
   box-sizing: border-box;
 }
 
-.header_container{
-    display: flex;
-    justify-content: space-between;
+.menu_main {
+  display: none;
 }
+
+.nav_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Main */
+
 main {
   flex-grow: 1;
 }
@@ -48,6 +59,16 @@ main {
   .container {
     max-width: 540px;
     padding: 0 16px; /*Maneja la distancia entre el contenido y el borde del contenedor e incrementa su tamaño en 8px en cada media query*/
+  }
+  .menu_main {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem; /*em y rem se refieren al tamaño de la fuente con respecto al padre*/
+  }
+  .hamburger_menu {
+    display: none;
   }
   /* Main */
   /* Footer */
