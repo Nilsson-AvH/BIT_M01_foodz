@@ -3,9 +3,13 @@
   /*Font size*/
   --over-font-size: 62.5%; /*Convierte 10px en 1rem o sea rem en base 10 y ya no en base 16*/
   /*Base colors*/
-  --Islamic-Green: #04B90B;
-  --Slate-Gray: #777E90;
-  --Charleston-Green: #23262F; 
+  --Lotion: #FCFCFD; /*Body background*/
+  --White: #FFFFFF; /*Some section backgrounds*/
+  --Islamic-Green: #04B90B; /*Main emphasis color*/
+  --Charleston-Green: #23262F; /*For h1, h2 headers Neutral 2*/
+  --Onyx: #353945; /*For big paragraph Neutral 3*/
+  --Slate-Gray: #777E90; /*For explanations below headers and icons Neutral 4*/
+  --Bright-Gray: #E6E8EC; /*For some border icons Neutral 6*/
 }
 
 html {
@@ -22,6 +26,10 @@ body {
 body {
   display: flex;
   flex-direction: column;
+}
+
+h1{
+  color: var(--Charleston-Green)
 }
 
 h1 span {
@@ -62,6 +70,9 @@ h1 span {
 
 .menu__link {
   color: var(--Slate-Gray);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -72,7 +83,7 @@ h1 span {
 
 .btn--light-green {
   background-color: var(--Islamic-Green);
-  color: #FFF;
+  color: var(--White);
   text-transform: uppercase;
 }
 
