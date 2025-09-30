@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <nav class="menu_nav nav_navbar">
                 <div class="site_logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./images/logo_foodz.png" alt="site_foodz_logo">
                     </a>
                 </div>
                 <ul class="menu_main">
-                    <li class="menu__item"><a href="#" class="menu__link btn">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link btn active">Home</a></li>
                     <li class="menu__item"><a href="#" class="menu__link btn">Menu</a></li>
                     <li class="menu__item"><a href="#" class="menu__link btn">Blog</a></li>
                     <li class="menu__item"><a href="#" class="menu__link btn">Contact</a></li>
@@ -57,11 +59,51 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <img src="./images/logo_foodz.png" alt="site_foodz_logo">
+        <div class="container footer_container">
+
+            <div class="widget widget_left">
+                <div class="site_logo">
+                    <a href="index.html">
+                        <img src="./images/logo_foodz.png" alt="site_foodz_logo">
+                    </a>
+                </div>
+                <p>Explore your Taste with speacial food in the special place, that will make you happy. I try to write some thing without lorem isum.</p>
+            </div>
+
+            <div class="widget widget_right">
+                <div class="menu_footer">
+                    <details class="details details_support">
+                        <summary>Support</summary>
+                        <ul class="submenu menu_support">
+                            <li class="menu__item"><a href="#" class="menu__link">Help Center</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Safety Information</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Cancelation Options</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Report Complain</a></li>
+                        </ul>
+                    </details>
+                    <details class="details details_community">
+                        <summary>Community</summary>
+                        <ul class="submenu menu_community">
+                            <li class="menu__item"><a href="#" class="menu__link">Customer Review</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Newsletter</a></li>
+                        </ul>
+                    </details>
+                    <details class="details details_about">
+                        <summary>About</summary>
+                        <ul class="submenu menu_about">
+                            <li class="menu__item"><a href="#" class="menu__link">Our Chef</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Carrers</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>    
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
