@@ -38,10 +38,18 @@
                     <div class="question_1">
                         <h1 class="hero">You've Got Questions. We've Got Answers</h1>
                         <p>Explore your Taste with speacial food in the special place. This text don’t have any meaning</p>
-                        <a href="#" class="btn btn--light-green">Order now</a>
+                        <div class="box_buttons">
+                            <a href="#" class="btn btn_none_block btn--light-green">Order now</a>
+                            <a href="#" class="btn btn_explore btn_none_block">Explore Menu</Menu></a>
+                        </div>
                     </div>
                     <div class="question_2 container_image">
-                        <img  class="img img_ramen" src="./images/ramen.png" alt="Ramen Plate">
+                        <picture>
+                            <source media="(width < 768px)" srcset="./images/ramen_portrail.png" />
+                            <source media="(width >= 768px)" srcset="./images/ramen-tablet.webp" />
+                            <img class="img img_ramen" src="./images/ramen-tablet.webp" alt="Chris standing up holding his daughter Elva" />
+                        </picture>
+                        <!-- <img  class="img img_ramen" src="./images/ramen.png" alt="Ramen Plate"> -->
                     </div>
                 </div>
             </div>
